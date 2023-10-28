@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+#year-month-container {
+  display: flex;
+}
+
+.month-container select,
+#year-container select {
+  /* ---------color update----------- */
+  background-color: transparent;
+  height: 40px;
+  width: 150px;
+  margin-bottom: 10%;
+  font-size: large;
+  color: black;
+  border: 2px solid black;
+  margin-right: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 600px;
+  height: 400px;
+}
+
+table,
+thead {
+  height: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background-color: none;
+  text-align: center;
+}
+
+.input-enter-btn {
+  display: flex;
+  margin-top: 20px;
+}
+
+#dayInput {
+  height: 40px;
+  background-color: rgb(222, 222, 243);
+  color: black;
+  border: 2px solid black;
+}
+
+#enterbtn {
+  margin-left: 20px;
+  width: 100px;
+  background-color: rgb(50, 50, 246);
+  border: none;
+}
