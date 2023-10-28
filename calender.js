@@ -4,7 +4,7 @@ const yearEl = document.getElementById("year-container");
 const dayInput = document.getElementById("dayInput");
 const enterbtn = document.getElementById("enterbtn");
 
-var months = [
+const months = [
   "Jan",
   "Feb",
   "Mar",
@@ -19,13 +19,13 @@ var months = [
   "Dec",
 ];
 
-var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const noOfMonths = 12;
 
-var calendarObject = document.getElementById("calendar");
+let calendarObject = document.getElementById("calendar");
 
-var currentMonth = new Date().getMonth();
+let currentMonth = new Date().getMonth();
 
 let currentYear = new Date().getFullYear();
 console.log(currentMonth);
@@ -115,8 +115,8 @@ function clearCalendar() {
 }
 
 function loadCalendar(month, year) {
-  var firstDay = new Date(year, month, 1).getDay();
-  var numberOfDays = 32 - new Date(year, month, 32).getDate();
+  let firstDay = new Date(year, month, 1).getDay();
+  let numberOfDays = 32 - new Date(year, month, 32).getDate();
   console.log(numberOfDays);
   let table = document.createElement("table");
   let thead = document.createElement("thead");
@@ -130,7 +130,7 @@ function loadCalendar(month, year) {
   thead.append(theadrow);
   table.append(thead);
   let tbody = document.createElement("tbody");
-  var datedate = 1;
+  let datedate = 1;
   for (let wks = 0; wks <= 5; wks++) {
     let tr = document.createElement("tr");
     for (let wds = 0; wds <= 6; wds++) {
